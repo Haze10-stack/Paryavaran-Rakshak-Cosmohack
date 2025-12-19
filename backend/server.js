@@ -11,7 +11,12 @@ const app = express();
 connectDB();
 
 // Middleware
-const allowedCors = [process.env.CORS_ORIGIN || 'http://localhost:5173', 'http://localhost:5174'];
+const allowedCors = [
+  process.env.CORS_ORIGIN || 'http://localhost:5173',
+  'http://localhost:5174',
+  'https://paryavaran-rakshak-cosmohack.vercel.app'
+];
+
 app.use(cors({
   origin: (origin, callback) => {
     // allow requests with no origin like mobile apps or curl
