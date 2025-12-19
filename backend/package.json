@@ -1,0 +1,32 @@
+{
+  "name": "adventure-backend-node",
+  "version": "1.0.0",
+  "description": "Node.js + MongoDB backend for Adventure Learning Platform",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "setup": "node scripts/createDirectories.js",
+    "seed:videos": "node scripts/addVideos.js",
+    "test:db": "node scripts/testConnection.js"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "education"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "mongoose": "^8.20.1",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
